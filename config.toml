@@ -1,0 +1,44 @@
+baseURL = 'https://slimen-aziz.github.io/'
+languageCode = 'en-us'
+title = 'aziz-dev'
+theme="archie"
+
+# Social Tags
+
+[[params.social]]
+name = "LinkedIn"
+icon = "linkedin"
+url = "https://linkedin.com/in/slimen-aziz"
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/Slimen-Aziz"
+
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/SlimenAziz6/"
+
+
+# Main menu Items
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
