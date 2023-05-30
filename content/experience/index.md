@@ -3,10 +3,10 @@ title: "My carrer so far"
 date: 2023-04-30T11:37:48+01:00
 ---
 
-lol xD
+**TODO**, Add intro
 
 # Work Experience
-lol xD
+**TODO**, Add experience
 
 # Featured projects
-lol xD
+**TODO**, Add projects
