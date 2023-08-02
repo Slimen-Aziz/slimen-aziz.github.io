@@ -1,11 +1,14 @@
 ---
-title: "Test Post"
+title: "Coming Soon..."
 date: 2023-04-26T11:59:51+01:00
-tags: [Test]
+# draft: false
+# github_link: "https://github.com/gurusabarish/hugo-profile"
+# author: "Gurusabarish"
+tags: [WIP]
+image: /images/projects/post.jpg
+socialShare: false # or can be disabled globally from params.
+# description: ""
+toc: false # enable/disable table of contents
 ---
 
-## Test
-
-This is **bold** text, and this is *emphasized* text.
-
-Visit my [GitHub](https://github.com/Slimen-Aziz) link!
+Visit my [GitHub link](https://github.com/Slimen-Aziz).

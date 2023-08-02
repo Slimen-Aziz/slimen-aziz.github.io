@@ -1,50 +1,125 @@
 baseURL = 'https://slimen-aziz.github.io/'
-languageCode = 'en-us'
-title = 'aziz-dev'
-theme="archie"
-copyright = "© Aziz"
+languageCode = "en-us"
+title = "Aziz Slimen Portfolio"
+theme = "hugo-profile"
+# enableEmoji = true
 
-# Social Tags
+[outputs] # no clue what this is yet.
+home = [ "HTML", "RSS", "JSON" ]
+page = [ "HTML", "RSS" ]
 
-[[params.social]]
-name = "LinkedIn"
-icon = "linkedin"
-url = "https://linkedin.com/in/slimen-aziz"
+Paginate = 3
+enableRobotsTXT = true
 
-[[params.social]]
-name = "GitHub"
-icon = "github"
-url = "https://github.com/Slimen-Aziz"
-
-[[params.social]]
-name = "Twitter"
-icon = "twitter"
-url = "https://twitter.com/SlimenAziz6/"
-
-
-# Main menu Items
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
 
 [[menu.main]]
-name = "Home"
-url = "/"
+identifier = "posts"
+name = "Posts"
+title = "Posts"
+url = "/posts"
 weight = 1
 
-[[menu.main]]
-name = "All posts"
-url = "/posts"
-weight = 2
+[params]
+title = "Aziz-Slimen"
+description = "Text about my cool site"
+copyright = "Aziz Slimen."
+terms.copyright = " "
+# staticPath = ""  # The path to serve the static files from
+favicon = "/logo.png"
+useBootstrapCDN = false
+animate = true
 
-[[menu.main]]
-name = "Experience"
-url = "/experience"
-weight = 3
+[params.theme]
+disableThemeToggle = false
+defaultTheme = "light"
 
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 4
+[params.font]
+fontSize = '1rem' # default: 1rem
+fontWeight = 400 # default: 400
+lineHeight = 1.5 # default: 1.5
+textAlign = 'left' # default: left
 
-# [[menu.main]]
-# name = "Tags"
-# url = "/tags"
-# weight = 5
+[params.navbar]
+align = 'ms-auto' # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+# brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+# showBrandLogo: false # Show brand logo in nav bar | default is true
+# brandName = "Hugo Profile" # Brand name for the brand | default is the title variable
+disableSearch = true
+searchPlaceholder = "Search"
+menus.disableAbout = false
+menus.disableExperience = false
+menus.disableEducation = false
+menus.disableProjects = false
+menus.disableAchievements = false
+menus.disableContact = false
+
+[params.hero]
+enable = true
+intro = "Hi, my name is"
+title = "Aziz."
+subtitle = "I’m a software engineer based in Tunisia."
+content = "I’m a passionate developer and gamer and I’m always on the lookout to acquire new skills. I am interested in Game Development technologies, particularly Unity and C#."
+image = "/images/me.png"
+roundImage = false
+bottomImage.enable = true
+button.enable = true
+button.name = "My Resume"
+button.url = "/Resume.pdf"
+button.download = true
+button.newPage = true
+# New addition
+secondaryBtn.enable = true
+secondaryBtn.name = "Check my work"
+secondaryBtn.url = "#recent-posts"
+socialLinks.fontAwesomeIcons = [
+    { icon = "fab fa-linkedin", url = "https://linkedin.com/in/slimen-aziz" },
+    { icon = "fab fa-github", url = "https://github.com/Slimen-Aziz" },
+    { icon = "fab fa-twitter", url = "https://twitter.com/SlimenAziz6/" },
+]
+# socialLinks.customIcons = [
+#     { icon = "/fav.png", url = "https://example.com" },
+# ]
+
+[params.about]
+enable =  true
+title = "About Me"
+# image = "/images/me.png" # pulls directly from static directory ("/images/me.png" : not working)
+content = "I am a detail-oriented individual who excels at both collaborative teamwork and independent projects. My forte lies in my ability to quickly learn and adapt to new environments and technologies. Welcome to my personal website/blog, where I showcase my passion for projects and write about my interesting experiences as a software engineer."
+skills.enable = true
+skills.title = "Here are a few technologies I've been working with recently:"
+skills.items = ["Unity3D", "C/C++", "Git", "SQL", "Java", "HTML,CSS,JavaScript", "PHP", ".NET C#", "Python", "Adobe XD", "PostgreSQL,MySQL", "Adobe Photoshop"]
+
+[params.experience]
+enable = true
+title = "My career so far"
+items = [
+    { job = "Game Development Instructor", company = "GOMYCODE", companyUrl = "https://gomycode.com/", date = "July 2023 - present", content = "Guided students of different ages and backgrounds to learn the basics of game development." },
+    { job = "Unity Developer", company = "ENVAST", companyUrl = "https://envast.tn/", date = "July 2020 - April 2023", content = "Built multiple games, features, and tools that focus on interactivity and ease of use for educational purposes, and cross-platform deployment." },
+    { job = "AR Developer (BSc Graduation project)", company = "3D WAVE", companyUrl = "https://www.3dwave.tech/", date = "February 2019 - July 2019", content = "Created an augmented reality application that serves as a companion piece for a children’s school book, using Unity3D, Vuforia and C#. [(Find it here)](https://drive.google.com/file/d/13JZ6Ol4IzvZWeBft2B_lJL2xzxIOhPBe/view)" },
+]
+
+[params.education]
+enable = true
+index = false
+items = [
+    { title = "Computer Science Engineering degree", school.name = "Higher Institute of Applied Sciences and Technology of Sousse", school.url = "https://issatso.rnu.tn/", date = "2019 - 2022" },
+    { title = "Summer School - Game Design and Development/Multidisciplinary Game Research", school.name = "Utrecht University – University of Applied Sciences Utrecht", school.url = "https://www.uu.nl/en", date = "2017" },
+    { title = "Bachelor's degree in Computer Science", school.name = "Higher Institute of Applied Sciences and Technology of Sousse", school.url = "https://issatso.rnu.tn/", date = "2016 - 2019" }
+]
+
+[params.contact]
+enable = true
+# title: "Custom Name"
+content = "Feel free to reach me through the links below, or shoot me an email!"
+email = "aziz.slimen77@gmail.com"
+btnName = "Send me an Email"
+
+[params.footer]
+recentPosts.path = "posts"
+recentPosts.count = 3
+recentPosts.title = "Featured Work"
+recentPosts.enable = true
+recentPosts.disableFeaturedImage = false
+socialNetworks = { github = "https://github.com/Slimen-Aziz", linkedin = "https://linkedin.com/in/slimen-aziz", twitter = "https://twitter.com/SlimenAziz6/" }
